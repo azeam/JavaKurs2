@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undersökning för företagsanställda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <article>
+        <h1>Undersökning för företagsanställda</h1>
+        <form class="surveyForm">
+            <label for="name">Ditt namn:</label>
+            <br>
+                <textarea id="name" name="name" cols="35" maxlength="20" class="nameTextarea"></textarea>
+            <br><br>
+
+            <label for="description"><b>Beskriv dig själv:</b></label>
+            <br>
+                <textarea id="description" name="description" cols="30" rows="4" class="descriptionTextarea"></textarea>
+            <br><br>
+
+            <i>Tränar du någon sport?</i>
+            <br>
+            <br>
+                <input type="radio" id="sportYes" name="sport" value="yes">
+                <label for="sportYes">Ja</label>
+            <br>
+                <input type="radio" id="sportNo" name="sport" value="no">
+                <label for="sportNo">Nej</label>
+            <br><br>
+
+            <b><i>Hur föredrar du att läsa om intressanta saker?</i></b>
+            <br>
+                <input type="checkbox" id="books" name="books" value="books">
+                <label for="books">Böcker</label>
+            <br>
+                <input type="checkbox" id="newspapers" name="newspapers" value="newspapers">
+                <label for="newspapers">Tidningar</label>
+            <br>
+                <input type="checkbox" id="online" name="online" value="online">
+                <label for="online">Online</label>
+            <br><br>
+
+            <label for="movies">Vilken typ av filmer föredrar du?</label>
+            <br>
+                <select name="movies" id="movies">
+                    <option disabled selected hidden> -- </option>
+                    <option value="action">Action</option>
+                    <option value="romance">Romantik</option>
+                    <option value="comedy">Komedi</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                </select>
+            <br><br>
+            <input type="submit" value="Skicka svar">
+        </form>
+    </article>
+
+</body>
+</html>
