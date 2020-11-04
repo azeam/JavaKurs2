@@ -147,8 +147,8 @@ function handleTouchMove(e) {
 $(".modeSwitch svg").click(function() {
     $(".modeSwitch svg").toggle();
     // TODO: not sure if I like the fade or not
-        $("html").hide().toggleClass("lightMode").fadeIn(200);
- //   $("html").toggleClass("lightMode");
+ //       $("html").hide().toggleClass("lightMode").fadeIn(200);
+    $("html").toggleClass("lightMode");
 });
 
 // hide menu (if hamburger) and load content when clicking link
