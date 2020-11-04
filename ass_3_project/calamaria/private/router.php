@@ -24,6 +24,7 @@
                 $this->page = "home";
             }
 
+            // set meta description
             switch ($this->page) {
                 case "home":
                     $this->description = "Download links and latest updates of the 'Calamaria of Borneo' mobile phone app";

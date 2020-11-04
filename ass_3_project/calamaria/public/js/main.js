@@ -152,7 +152,7 @@ $(".modeSwitch svg").click(function() {
 });
 
 // hide menu (if hamburger) and load content when clicking link
-$(".menu li a, .logoLink").click(function(e){
+$(".menu li a, .logoLink").click(function(e) {
     e.preventDefault(); // prevents showing pound sign in url and doesn't push it to history stack
                         // links are not followed but are there for seo purposes (same result when visiting url)
     let path = $(this).attr("href");
@@ -160,8 +160,8 @@ $(".menu li a, .logoLink").click(function(e){
     if ($("#burgerMenu").is(":visible")) {
         toggleMenu($("#burgerMenu"));
     }
-    path == "/" ? page = "home" : page = path.split("/")[1]; ;
-    history.pushState({page}, page, `${path}`);
+    path == "/" ? page = "home" : page = path.split("/")[1];
+    history.pushState({page}, page, `${path}`); // pushstate will also trigger the php get request and update the meta description
     setPage(page);
 });
 
@@ -191,7 +191,7 @@ document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
 
 // set current page
-$('document').ready(function(){
+$('document').ready(function() {
     let curPage = window.location.pathname.toLowerCase();
     // hardcoded switch to prevent xss attempts
     switch (curPage) {
