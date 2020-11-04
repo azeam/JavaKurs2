@@ -1,0 +1,19 @@
+<h1>Contact</h1>
+<div class="formContainer">
+    <form action="php/mailer.php" method="POST" id="contactForm">
+                
+        <label for="email">Your e-mail address:</label><br>
+        <input id="email" type="email" name="email" class="form" required><br><br>
+
+        <label for="botcheck">Two plus two equals:</label><br>
+        <input id="botcheck" type="text" name="botcheck" class="form" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" class="form" rows="10" required></textarea><br><br>
+        
+        <div id="formResponseContainer"></div>
+        <input type="submit" name="submit" value="Send message" id="contactFormSubmit">
+        <div id="formSpinner" class="spinner"></div>  
+    </form>
+    
+</div>

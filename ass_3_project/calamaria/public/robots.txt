@@ -1,0 +1,4 @@
+User-Agent: *
+disallow: /static/
+# TODO: remove below
+disallow: /

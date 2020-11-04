@@ -1,0 +1,5 @@
+Options +FollowSymLinks -MultiViews    
+RewriteEngine  on
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule ^([^/\.]+)/?$ index.php?page=$1 [QSA]
