@@ -4,7 +4,7 @@ var yDown = null;
 
 // show main content
 function setPage(page) {  
-    let capPage = page.charAt(0).toUpperCase() + page.slice(1); // set camelcase title since document is not reloaded
+    let capPage = page.charAt(0).toUpperCase() + page.slice(1); // set title with capital subtext since document is not reloaded
     document.title = pageTitle + " - " + capPage;    
     $("#footer").hide().fadeIn(500); // prevent flickering
     $("#main").hide().load(`/static/${page}.html`).fadeIn(500, function() {
@@ -187,6 +187,7 @@ $(document).mousedown(function(e) {
     }
 });
 
+// touch listeners
 document.addEventListener('touchstart', handleTouchStart, false);        
 document.addEventListener('touchmove', handleTouchMove, false);
 

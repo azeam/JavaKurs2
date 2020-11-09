@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php echo $page->description ?>">
+    <meta name="description" content="<?php echo $page->getDescription() ?>">
     <meta name="author" content="Dennis Hägg">
     <meta property="og:title" content="<?php echo $page->getTitle(); ?>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.calamariaofborneo.com/" />
     <meta property="og:image" content="https://www.calamariaofborneo.com/images/og/main.jpg" />
-    <meta property="og:description" content="<?php echo $page->description ?>" />
+    <meta property="og:description" content="<?php echo $page->getDescription() ?>" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <title><?php echo $page->getTitle(); ?></title>
