@@ -425,13 +425,16 @@ h3 {
 	color: var(--main-swiper-control);
 }
 
-.storeContainer img {
+.storeLogo {
 	height: 38px;
 	margin: 0 0.5rem;
 	box-shadow: 2px 3px 4px var(--main-shadow-color);
 	border-radius: 8px; /* not pixel perfect but avoids corners showing between img and shadow */
+	transition: all .1s ease-in-out;
 }
+
 /* END IMAGES */
+
 
 
 
@@ -542,9 +545,11 @@ h3 {
 	.swiper-container {
 		width: 600px;
 	}
+
 	#topMenu {
 		display: flex;
 	}
+
 	#topMenu .menu {
 		display: flex;
 		justify-content: center;
@@ -573,6 +578,10 @@ h3 {
 		display: block;
 		margin: 0 auto;
 		max-width: 600px;
+	}
+
+	.storeLogo:hover { 
+		transform: scale(1.1); 
 	}
 }
 /* END BIG SCREEN */
